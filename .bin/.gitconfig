@@ -62,7 +62,7 @@
   bn = !git branch --show-current
   pso = !git push origin $(git bn)
   ps- = "!f() { git push $1 $(git bn); }; f"
-  psfo = !git push --force-with-lease origin $(git bn)
+  psfo = !git push --force-with-lease --force-if-includes origin $(git bn)
   psf- = "!f() { git push --force-with-lease $1 $(git bn); }; f"
   show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
   checkout-default-branch = "!f() { git checkout $(git show-default-branch); }; f"
