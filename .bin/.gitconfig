@@ -8,6 +8,7 @@
   plom = pull origin main
   ps = push
   psf = push --force-with-lease
+  psfo = git psf origin $(git bn) 
   pt = push --tags
   ss = status -s
   s = status
