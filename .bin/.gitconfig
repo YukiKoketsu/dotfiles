@@ -82,7 +82,6 @@
 [apply]
   whitespace = fix
 [core]
-  pager = delta
   editor = vim
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
@@ -119,8 +118,8 @@
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
 [user]
-	name = yuki.koketsu
-	email = yuki.koketsu@gmail.com
+	name = koke2y
+	email = koke2y@koke2y.com
 [pull]
   rebase = true
 [push]
@@ -142,9 +141,6 @@
   smudge = git-lfs smudge -- %f
   required = true
   process = git-lfs filter-process
-[pager]
-  diff = delta
-  show = delta
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
@@ -154,9 +150,3 @@
   root = ~/Repositories
 [init]
   defaultBranch = main
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  line-numbers = true
-  whitespace-error-style = 22 reverse
-  syntax-theme = Solarized (dark)
